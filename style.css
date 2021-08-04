@@ -339,6 +339,7 @@ h1{
     display: flex;
     flex-direction: row;
     color: #0065FC;
+    font-size: 13px;
 }
 
 .star_container .star_empty{
@@ -346,18 +347,16 @@ h1{
 }
 
 .description_container{
-    position: relative;
-    right: 30px;
-    padding: 10px;
+    width: 200px;
 }
 
-.description_container h3{
+.titre_vignette{
     font-size: 16px;
     padding-bottom: 4px;
     font-weight: bold;
 }
 
-.description_container p{
+.text_vignette{
     padding-top: 4px;
     padding-bottom: 8px;
     font-size: 14px;
