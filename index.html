@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+	    <title>Reservia</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/f21ef779fa.js" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+
+    <div class="bloc_page">
+        
+        <header>
+            
+            <div class="logo">
+                <img class="resize" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
+            </div>
+        
+            <nav>
+                <a class="lienstyle" href="#ancre_heber" id="link1">Hébergements</a>
+                <a class="lienstyle" href="#ancre_activite" id="link2">Activités</a>
+                <a class="lienstyle" href="#" id="link3"><strong>S'inscrire</strong></a>
+            </nav>
+
+        </header>
+
+        <section class="intro_container">
+                        
+            <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            
+        </section>
+            
+        <section class="formulaire_container">
+
+            <div class="icon_location">
+                <i id="map" class="fas fa-map-marker-alt"></i>
+            </div>
+
+            <form method="POST" action="traitement.php" class="form_1">
+                <input type="search" name="search" size="25" value="Marseille, France" />
+                <input type="submit" name="submit" value="Rechercher" /> 
+            </form>
+
+        </section>
+
+        <section class="filtre_container">
+            <h2>Filtres</h2>
+
+                    <ul class="list_filtre">
+                        
+                        <i id="money" class="fas fa-money-bill-wave"></i>
+                        <button class="filtre"><a href="#">Économique</a></button>
+                        <i id="child" class="fas fa-child"></i>
+                        <button class="filtre"><a href="#">Familial</a></button>
+                        <i id="heart" class="fas fa-heart"></i>
+                        <button class="filtre"><a href="#">Romantique</a></button>
+                        <i id="dog" class="fas fa-dog"></i>
+                        <button class="filtre"><a href="#">Animaux autorisés</a></button>
+
+                    </ul>
+                    
+        </section>
+
+        <section class="info_container">
+
+            <i id="info" class="fas fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+
+        </section>
+
+        <section class="hebergement_container">
+
+            <h2>Hébergements à Marseille</h2>
+            
+            <div class="test">
+            <figure class="vignette_container">
+
+                <a href="#">
+                <img class="img_vignette" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                </a>
+
+                <figcaption class="description_container">
+
+                    <h3>Auberbe la Cannebière</h3>
+                    <p>Nuit à partir de <strong>25€</strong></p>
+
+                    <div class="star_container">
+                        <div class="star"><i class="fas fa-star"></i></div>
+                        <div class="star"><i class="fas fa-star"></i></div>
+                        <div class="star"><i class="fas fa-star"></i></div>
+                        <div class="star"><i class="fas fa-star"></i></div>
+                        <div class="star_empty"><i class="fas fa-star"></i></div>
+                    </div>
+
+                </figcaption>
+                
+            </figure>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
