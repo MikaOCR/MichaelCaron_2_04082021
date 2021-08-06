@@ -413,6 +413,8 @@ h1{
     font-size: 22px;
 }
 
+/* Vignette Populaire */
+
 .vignette_container_pop{
     background: #F2F2F2;
     box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
@@ -473,4 +475,231 @@ h1{
 .vignette_container_pop:hover{
     cursor: pointer;
     transform: scale(1.1);
+}
+
+
+/* Activités */
+
+.titre_activities{
+    padding-left: 60px;
+    padding-top: 150px;
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+
+.bloc_activities{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.bloc_item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.flex_item_1{
+    flex-basis: 16%;
+    height: 440px;
+}
+
+.flex_item_2{
+    flex-basis: 16%;
+    height: 390px;
+}
+
+.flex_item_3{
+    flex-basis: 16%;
+    height: 390px;
+}
+
+.bloc_item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+/* Vignette Activités */
+
+.img_container_activities_duo{
+    background: #F2F2F2;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
+    width: 304px;
+    height: 440px;
+}
+
+.img_vignette_activities_duo{
+    width: 304px;
+    height: 390px;
+    border-radius: 5% 5% 0% 0% / 5% 5% 0% 0% ;
+    object-fit: cover;
+}
+
+.img_container_activities_pomegue{
+    background: #F2F2F2;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
+    width: 304px;
+    height: 230px;
+}
+
+.img_vignette_activities_pomegue{
+    width: 304px;
+    height: 180px;
+    border-radius: 5% 5% 0% 0% / 5% 5% 0% 0% ;
+    object-fit: cover;
+}
+
+.img_container_activities_frioul{
+    background: #F2F2F2;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
+    width: 304px;
+    height: 160px;
+}
+
+.img_vignette_activities_frioul{
+    width: 304px;
+    height: 110px;
+    border-radius: 5% 5% 0% 0% / 5% 5% 0% 0% ;
+    object-fit: cover;
+}
+
+.img_container_activities_garde{
+    background: #F2F2F2;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
+    width: 304px;
+    height: 190px;
+}
+
+.img_vignette_activities_garde{
+    width: 304px;
+    height: 140px;
+    border-radius: 5% 5% 0% 0% / 5% 5% 0% 0% ;
+    object-fit: cover;
+}
+
+.img_container_activities_longchamp{
+    background: #F2F2F2;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
+    width: 304px;
+    height: 205px;
+}
+
+.img_vignette_activities_longchamp{
+    width: 304px;
+    height: 155px;
+    border-radius: 5% 5% 0% 0% / 5% 5% 0% 0% ;
+    object-fit: cover;
+}
+
+.img_container_activities_duo a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.img_container_activities_duo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img_container_activities_pomegue a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.img_container_activities_pomegue:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img_container_activities_frioul a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.img_container_activities_frioul:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img_container_activities_garde a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.img_container_activities_garde:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img_container_activities_longchamp a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.img_container_activities_longchamp:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.description_container_activities{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 100px;
+    padding-left: 60px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: inherit;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nos_hebergements{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.help{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
