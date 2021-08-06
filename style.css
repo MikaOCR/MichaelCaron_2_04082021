@@ -277,7 +277,7 @@ h1{
 #info{
     color: #0065FC;
     background-color: #F2F2F2;
-    border: 1px solid rgb(180, 180, 180);
+    border: 1px solid rgb(202, 201, 201);
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
     font-size: 13px;
     width: 22px;
@@ -295,14 +295,22 @@ h1{
 
 /* Section hébergements */
 
+.heber_pop_col{
+    display: flex;
+    background-color: darkgrey;
+    
+    
+}
+
 .hebergement_container{
     padding-left: 60px;
-    width: 55%;
+    width: 75%;
     height: 490px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: aquamarine;
 }
 
 .titre_hebergement{
@@ -318,6 +326,7 @@ h1{
     position: relative;
     top: 40px;
     font-size: 18px;
+    padding-left: 60px;
 }
 
 
@@ -385,3 +394,22 @@ h1{
     font-size: 14px;
 }
 
+    /* Populaire */
+
+.bloc_populaire{
+    width: 45%;
+    background-color: brown;
+}
+
+.titre_pop_icon{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#icon_arrow{
+    position: relative;
+    left: 100px;
+    font-size: 22px;
+}
