@@ -168,8 +168,7 @@ h1{
     font-family: 'Raleway';
     font-size: 19px;
     font-weight: bold;
-    border: 1px solid #F2F2F2;
-    box-shadow: 1px 1px 2px;
+    border: 2px solid rgb(217, 217, 217);
     border-radius: 10% 10% 10% 10% / 50% 50% 50% 50% ;
     cursor: pointer;
     opacity: 0.9;
@@ -300,7 +299,8 @@ h1{
 }
 
 .hebergement_container{
-    padding-left: 60px;
+    position: relative;
+    left: 90px;
     width: 80%;
     height: 490px;
     display: flex;
@@ -310,7 +310,8 @@ h1{
 }
 
 .titre_hebergement{
-    padding-left: 60px;
+    position: relative;
+    left: 90px;
     padding-top: 60px;
     padding-bottom: 20px;
 }
@@ -321,8 +322,9 @@ h1{
     font-weight: bold;
     position: relative;
     top: 10px;
+    left: 90px;
     font-size: 18px;
-    padding-left: 60px;
+    
 }
 
 
@@ -398,6 +400,8 @@ h1{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    position: relative;
+    left: 150px;
 }
 
 .titre_pop_icon{
