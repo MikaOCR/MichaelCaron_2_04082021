@@ -29,11 +29,12 @@ body{
 }
 
 
+
 /* Header */
 
 
 
-header{
+.nav_bar{
     height: 140px;
     width: 100%;
     padding: 60px;
@@ -183,6 +184,7 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -296,6 +298,8 @@ h1{
 
 .heber_pop_col{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .hebergement_container{
@@ -707,4 +711,154 @@ h1{
 .footer a:hover{
     cursor: pointer;
     opacity: 0.8;
+}
+
+
+/* Media Queries */
+
+@media all and (max-width: 1024px)
+
+{
+
+    .nav_bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    img.resize{
+        width: 100px;
+        padding-bottom: 20px;
+    }
+
+    .intro_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    .intro_container h1{
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .info_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+
+    /* Formulaire */
+
+
+    .formulaire_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* Filtre */
+
+    .filtre_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .filtre_container ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .filtre_container h2{
+        display: none;
+    }
+
+    .filtre{
+        width: 190px;
+        font-size: 15px;
+    }
+
+    #money{
+        display: none;
+    }
+
+    #child{
+        display: none;
+    }
+
+    #heart{
+        display: none;
+    }
+
+    #dog{
+        display: none;
+    }
+
+
+    /* Hebergements et Populaire */
+
+    .heber_pop_col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }
+
+    .bloc_populaire{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 100px;
+        left: 0px;
+    }
+
+    .heber_pop_col h2{
+        font-size: 19px;                
+    }
+
+    .icon_stat{
+        display: none;
+    }
+
+    /* Activities */
+
+    .titre_activities h2{
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .bloc_activities{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Footer */
+
+    .footer a{
+        font-size: 13px;
+    }
+
+    .footer h2{
+        font-size: 15px;
+    }
 }
