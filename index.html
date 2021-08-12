@@ -7,6 +7,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
 
         <script src="https://kit.fontawesome.com/f21ef779fa.js" crossorigin="anonymous"></script>
     </head>
@@ -29,43 +32,50 @@
             </div> 
         </header>
 
-        <div class="intro_container">
-                        
-            <h1><b>Trouvez votre hébergement pour des vacances de rêve</b></h1>
+        <section class="intro_container">    
+
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-
-        </div>
             
-        <div class="formulaire_container">
+            <div class="formulaire_container">
 
-            <div class="icon_location">
-                <i id="map" class="fas fa-map-marker-alt"></i>
+                <div class="icon_location">
+                    <i id="map" class="fas fa-map-marker-alt"></i>
+                </div>
+
+                <form method="POST" action="traitement.php" class="form_1">
+                    <input type="search" name="search" size="25" value="    Marseille, France" />
+                    <input type="submit" name="submit" size="25" value="Rechercher" /> 
+                </form>
+
+            </div>
+        </section>
+
+        <section class="filtre_container">
+
+            <div><h2>Filtres</h2></div>
+
+            <div class="bouton_filtre">
+                <i id="money" class="fas fa-money-bill-wave filtreIcon"></i>
+                <div class="text_icon">Économique</div>
             </div>
 
-            <form method="POST" action="traitement.php" class="form_1">
-                <input type="search" name="search" size="25" value="Marseille, France" />
-                <input type="submit" name="submit" value="Rechercher" /> 
-            </form>
+            <div class="bouton_filtre">
+                <i id="child" class="fas fa-child filtreIcon"></i>
+                <div class="text_icon">Familial</div>
+            </div>
 
-        </div>
+            <div class="bouton_filtre">
+                <i id="heart" class="fas fa-heart filtreIcon"></i>
+                <div class="text_icon">Romantique</div>
+            </div>
 
-        <div class="filtre_container">
-            <h2>Filtres</h2>
+            <div class="bouton_filtre">
+                <i id="dog" class="fas fa-dog filtreIcon"></i>
+                <div class="text_icon">Animaux autorisés</div>
+            </div>
 
-                    <ul class="list_filtre">
-                        
-                        <i id="money" class="fas fa-money-bill-wave"></i>
-                        <button class="filtre"><a href="#">Économique</a></button>
-                        <i id="child" class="fas fa-child"></i>
-                        <button class="filtre"><a href="#">Familial</a></button>
-                        <i id="heart" class="fas fa-heart"></i>
-                        <button class="filtre"><a href="#">Romantique</a></button>
-                        <i id="dog" class="fas fa-dog"></i>
-                        <button class="filtre"><a href="#">Animaux autorisés</a></button>
-
-                    </ul>
-                    
-        </div>
+        </section>
 
         <div class="info_container">
 
