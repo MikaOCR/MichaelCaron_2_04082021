@@ -565,8 +565,8 @@ h1{
 .img_container_activities_duo{  /* box vignette */
     box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.15);
     border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
-    max-width: 415px;
-    max-height: 540px;
+    width: 415px;
+    height: 540px;
 }
 
 .img_vignette_activities_duo{
@@ -581,11 +581,9 @@ h1{
 .img_container_activities_pomegue{
     box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.15);
     border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
-    max-width: 416px;
-    max-height: 270px;
-    min-width: 330px;
-    min-height: 190px;
-    margin-bottom: 60px;
+    width: 416px;
+    height: 270px;
+    margin-bottom: 40px;
 }
 
 .img_vignette_activities_pomegue{
@@ -599,10 +597,8 @@ h1{
 .img_container_activities_frioul{
     box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.15);
     border-radius: 5% 5% 5% 5% / 10% 10% 5% 5% ;
-    max-width: 416px;
-    max-height: 230px;
-    min-width: 330px;
-    min-height: 190px;
+    width: 416px;
+    height: 230px;
 }
 
 .img_vignette_activities_frioul{
@@ -616,11 +612,9 @@ h1{
 .img_container_activities_garde{
     box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.15);
     border-radius: 5% 5% 5% 5% / 10% 10% 5% 5% ;
-    max-width: 419px;
-    max-height: 250px;
-    min-width: 330px;
-    min-height: 190px;
-    margin-bottom: 60px;
+    width: 419px;
+    height: 250px;
+    margin-bottom: 40px;
 }
 
 .img_vignette_activities_garde{
@@ -634,10 +628,8 @@ h1{
 .img_container_activities_longchamp{
     box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.15);
     border-radius: 5% 5% 5% 5% / 10% 10% 5% 5% ;
-    max-width: 419px;
-    max-height: 250px;
-    min-width: 330px;
-    min-height: 190px;
+    width: 419px;
+    height: 250px;
 }
 
 .img_vignette_activities_longchamp{
@@ -763,6 +755,66 @@ h1{
 
 
 /* Media Queries */
+
+@media screen and (max-width: 1440px)
+
+{
+    /* HEBERGEMENT */
+    
+    .hebergement_container{
+        height: 1000px;
+    }
+
+    .bloc_vignette{
+        margin-left: 80px;
+    }
+    
+    /* POPULAIRE */
+
+    .vignette_container_pop{
+        margin-right: 50px;
+    }
+    
+    /* ACTIVITIES */
+
+    .bloc_activities{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .bloc_item1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        max-width: 300px;
+    }
+    
+    .flex_item_1{
+        margin-right: 40px;
+        max-width: 300px;
+    }
+    
+    .flex_item_2{
+        margin-right: 40px;
+        max-width: 300px;
+    }
+    
+    
+    
+    .bloc_item2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        max-width: 300px;
+    }
+
+    
+}   
 
 @media screen and (max-width: 375px)
 
