@@ -396,7 +396,7 @@ h1{
 }
 
 .img_auberge_cannebiere{
-    background-image: url("images/hebergements/3_medium/auberge_cannebiere.jpg");
+    background-image: url("assets/hebergements/3_medium/auberge_cannebiere.jpg");
     background-size: cover;
     background-position: center;
     height: 175px;
@@ -405,7 +405,7 @@ h1{
 }
 
 .img_hotel_du_port{
-    background-image: url("images/hebergements/3_medium/hotel_du_port.jpg");
+    background-image: url("assets/hebergements/3_medium/hotel_du_port.jpg");
     background-size: cover;
     background-position: center;
     height: 175px;
@@ -414,7 +414,7 @@ h1{
 }
 
 .img_hotel_les_mouettes{
-    background-image: url("images/hebergements/3_medium/hotel_les_mouettes.jpg");
+    background-image: url("assets/hebergements/3_medium/hotel_les_mouettes.jpg");
     background-size: cover;
     background-position: center;
     height: 175px;
@@ -423,7 +423,7 @@ h1{
 }
 
 .img_hotel_de_la_mer{
-    background-image: url("images/hebergements/3_medium/hotel_de_la_mer.jpg");
+    background-image: url("assets/hebergements/3_medium/hotel_de_la_mer.jpg");
     background-size: cover;
     background-position: center;
     height: 175px;
@@ -432,7 +432,7 @@ h1{
 }
 
 .img_auberge_le_panier{
-    background-image: url("images/hebergements/3_medium/auberge_le_panier.jpg");
+    background-image: url("assets/hebergements/3_medium/auberge_le_panier.jpg");
     background-size: cover;
     background-position: center;
     height: 175px;
@@ -441,7 +441,7 @@ h1{
 }
 
 .img_hotel_chez_amina{
-    background-image: url("images/hebergements/3_medium/hotel_chez_amina.jpg");
+    background-image: url("assets/hebergements/3_medium/hotel_chez_amina.jpg");
     background-size: cover;
     background-position: center;
     height: 175px;
