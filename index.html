@@ -18,8 +18,8 @@
 
 <body>
     <header class="big_screen">       
-        <div class="logo">
-            <img class="resize" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
+        <div>
+            <img class="logo_R" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
         </div>
 
         <nav>
@@ -29,9 +29,9 @@
         </nav>
     </header>
 
-    <header class="small_screen">
+    <header class="small_screen">                                                           <!-- Active when screen < 600px -->
         <div class="logo_inscription">
-            <img class="resize" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
+            <img class="logo_R" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
             
             <a class="lienstyle" href="#" id="link3"><strong>S'inscrire</strong></a>
         </div>
@@ -39,14 +39,16 @@
         <div class="nav">
             <a class="lienstyle" href="#ancre_heber" id="link1">Hébergements</a>
             <a class="lienstyle" href="#ancre_activite" id="link2">Activités</a>
-        </div>
-    </header>
+        </div>                                                                                      
+    </header>                                                                                <!-- /Active when screen < 600px -->
         <main>
+                <!-- EN-TETE -->
             <section class="intro_container"> 
 
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
 
+                <!-- FORMULAIRE -->
                 <div class="formulaire_container">
                     <div class="icon_location">
                         <i id="map" class="fas fa-map-marker-alt"></i>
@@ -54,11 +56,12 @@
                     <form method="POST" action="traitement.php" class="form_1">
                         <input type="search" name="search" placeholder="Marseille, France" />
                         <input type="submit" name="submit" value="Rechercher" />
-                        <input type="submit_small" name="submit" value="" /> 
+                        <input type="submit_small" name="submit" value="" />                <!-- Active when screen < 600px -->
                     </form>
-                    <div class="icon_search"><i class="fas fa-search"></i></div>
+                    <div class="icon_search"><i class="fas fa-search"></i></div>            <!-- /Active when screen < 600px -->
                 </div>
 
+                <!-- BARRE DES FILTRES -->
                 <div class="filtre_container">
                     <div class="titre_filtre"><h2>Filtres</h2></div>
                         <div class="bloc_filtre">
@@ -81,6 +84,7 @@
                         </div>
                 </div>
 
+                <!-- INFO -->
                 <div class="info_container">
                     <i id="info" class="fas fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -90,16 +94,15 @@
         </main>
         <section class="hebergement_populaire_container">
 
+            <!-- BLOC HEBERGEMENT -->
             <div class="hebergement_container">
 
                 <h3 id="ancre_heber" >Hébergements à Marseille</h3>
 
                 <div class="bloc_vignette">    
-                    <figure class="vignette_container"> <!-- Auberge la Cannebière -->
-                        <a href="#">
-                        <img class="img_vignette" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
-                        </a>
-                        <figcaption class="description_container">
+                    <div class="vignette_container"> 
+                        <div class="img_auberge_cannebiere"></div>
+                        <div class="description_container">
                             <h4 class="titre_vignette">Auberbe la Cannebière</h4>
                             <p class="text_vignette">Nuit à partir de <b>25€</b></p>
                             <div class="star_container">
@@ -109,14 +112,12 @@
                                 <div class="star"><i class="fas fa-star"></i></div>
                                 <div class="star_empty"><i class="fas fa-star"></i></div>
                             </div>
-                        </figcaption>  
-                    </figure>
+                        </div>  
+                    </div>
 
-                    <figure class="vignette_container"> <!-- Hotêl du port -->
-                        <a href="#">
-                        <img class="img_vignette" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Auberge la Cannebière">
-                        </a>
-                        <figcaption class="description_container">
+                    <div class="vignette_container"> 
+                        <div class="img_hotel_du_port"></div>
+                        <div class="description_container">
                             <h4 class="titre_vignette">Hôtel du port</h4>
                             <p class="text_vignette">Nuit à partir de 52<b>€</b></p>
                             <div class="star_container">
@@ -126,14 +127,12 @@
                                 <div class="star"><i class="fas fa-star"></i></div>
                                 <div class="star"><i class="fas fa-star"></i></div>
                             </div>
-                        </figcaption>  
-                    </figure>
+                        </div>  
+                    </div>
 
-                    <figure class="vignette_container"> <!-- Hôtel Les mouettes -->
-                        <a href="#">
-                        <img class="img_vignette" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Auberge la Cannebière">
-                        </a>
-                        <figcaption class="description_container">
+                    <div class="vignette_container"> 
+                        <div class="img_hotel_les_mouettes"></div>
+                        <div class="description_container">
                             <h4 class="titre_vignette">Hôtel Les mouettes</h4>
                             <p class="text_vignette">Nuit à partir de 76<b>€</b></p>
                             <div class="star_container">
@@ -143,14 +142,12 @@
                                 <div class="star"><i class="fas fa-star"></i></div>
                                 <div class="star_empty"><i class="fas fa-star"></i></div>
                             </div>
-                        </figcaption>  
-                    </figure>
+                        </div>  
+                    </div>
 
-                    <figure class="vignette_container"> <!-- Hôtel de la mer -->
-                        <a href="#">
-                        <img class="img_vignette" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberge la Cannebière">
-                        </a>
-                        <figcaption class="description_container">
+                    <div class="vignette_container"> 
+                        <div class="img_hotel_de_la_mer"></div>
+                        <div class="description_container">
                             <h4 class="titre_vignette">Hôtel de la mer</h4>
                             <p class="text_vignette">Nuit à partir de 46<b>€</b></p>
                             <div class="star_container">
@@ -160,14 +157,12 @@
                                 <div class="star_empty"><i class="fas fa-star"></i></div>
                                 <div class="star_empty"><i class="fas fa-star"></i></div>
                             </div>
-                        </figcaption>  
-                    </figure>
+                        </div>  
+                    </div>
 
-                    <figure class="vignette_container"> <!-- Auberge Le Panier -->
-                        <a href="#">
-                        <img class="img_vignette" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge la Cannebière">
-                        </a>
-                        <figcaption class="description_container">
+                    <div class="vignette_container"> 
+                        <div class="img_auberge_le_panier"></div>
+                        <div class="description_container">
                             <h4 class="titre_vignette">Auberbe Le Panier</h4>
                             <p class="text_vignette">Nuit à partir de <b>23€</b></p>
                             <div class="star_container">
@@ -177,14 +172,12 @@
                                 <div class="star"><i class="fas fa-star"></i></div>
                                 <div class="star_empty"><i class="fas fa-star"></i></div>
                             </div>
-                        </figcaption>  
-                    </figure>
+                        </div>  
+                    </div>
 
-                    <figure class="vignette_container"> <!-- Hôtel chez Amina -->
-                        <a href="#">
-                        <img class="img_vignette" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Auberge la Cannebière">
-                        </a>
-                        <figcaption class="description_container">
+                    <div class="vignette_container"> 
+                        <div class="img_hotel_chez_amina"></div>
+                        <div class="description_container">
                             <h4 class="titre_vignette">Hôtel chez Amina</h4>
                             <p class="text_vignette">Nuit à partir de 96<b>€</b></p>
                             <div class="star_container">
@@ -194,8 +187,8 @@
                                 <div class="star"><i class="fas fa-star"></i></div>
                                 <div class="star"><i class="fas fa-star"></i></div>
                             </div>
-                        </figcaption>  
-                    </figure>
+                        </div>  
+                    </div>
                 </div>
                 <div id="afficherplus">
                     <a href="#">Afficher plus</a>
@@ -203,14 +196,12 @@
             </div>
         
         
-        
+            <!-- BLOC POPULAIRE -->
             <div class="populaire_container">
 
                 <div class="titre_pop_container">
-                    <div class="titre_pop_icon">
                         <h3>Les plus populaires</h3>
                         <i id="icon_arrow" class="fas fa-chart-line"></i>
-                    </div>
                 </div>
 
                 <div class="bloc_populaire">
@@ -269,6 +260,7 @@
             </div>
         </section>
 
+        <!-- BLOC ACTIVITIES -->
         <section class="activities_container">
 
             <div class="titre_activities"><h3 id="ancre_activite">Activités à Marseille</h3></div>
@@ -335,6 +327,7 @@
             </div>
         </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="footer">
             <div class="bloc_footer">
