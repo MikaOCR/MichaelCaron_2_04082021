@@ -19,7 +19,7 @@ html{
 
 body{
     background-color: #FFFF;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -892,6 +892,7 @@ footer{
 @media screen and (max-width: 600px)
 
 {
+
         /* HEADER */
 
     .big_screen{
