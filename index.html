@@ -17,30 +17,21 @@
 </head>
 
 <body>
-    <header class="big_screen">       
-        <div>
+    <header>       
+        <div class="logo-container">
             <img class="logo_R" src="assets/logo/Reservia@3x.png" alt="Logo Reservia" />
         </div>
 
         <nav>
-            <a class="lienstyle" href="#ancre_heber" id="link1">Hébergements</a>
+            <div class="link-solo">
+                <a class="lienstyle" href="#" id="link3">S'inscrire</a>
+            </div>
             <a class="lienstyle" href="#ancre_activite" id="link2">Activités</a>
-            <a class="lienstyle" href="#" id="link3">S'inscrire</a>
+            <a class="lienstyle" href="#ancre_heber" id="link1">Hébergements</a>
+
         </nav>
     </header>
 
-    <header class="small_screen">                                                           <!-- Active when screen < 600px -->
-        <div class="logo_inscription">
-            <img class="logo_R" src="assets/logo/Reservia@3x.png" alt="Logo Reservia" />
-            
-            <a class="lienstyle" href="#" id="link3"><strong>S'inscrire</strong></a>
-        </div>
-            
-        <div class="nav">
-            <a class="lienstyle" href="#ancre_heber" id="link1">Hébergements</a>
-            <a class="lienstyle" href="#ancre_activite" id="link2">Activités</a>
-        </div>                                                                                      
-    </header>                                                                                <!-- /Active when screen < 600px -->
         <main>
                 <!-- EN-TETE -->
             <section class="intro_container"> 
@@ -56,7 +47,7 @@
                     <form method="POST" action="traitement.php" class="form_1">
                         <input type="search" name="search" placeholder="Marseille, France" />
                         <input type="submit" name="submit" value="Rechercher" />
-                        <input type="submit_small" name="submit" value="" />                <!-- Active when screen < 600px -->
+                        <button class="button"></button>                <!-- Active when screen < 600px -->
                     </form>
                     <div class="icon_search"><i class="fas fa-search"></i></div>            <!-- /Active when screen < 600px -->
                 </div>

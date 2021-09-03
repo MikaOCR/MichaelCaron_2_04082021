@@ -35,9 +35,6 @@ header{
     flex-wrap: wrap;
 }
 
-.small_screen{
-    display: none;
-}
 
 .logo_R{
     width: 177px;
@@ -46,11 +43,13 @@ header{
 
 nav{
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
 nav a{
     padding: 55px 30px 30px 30px;
+
 }
 
 .lienstyle{
@@ -60,11 +59,14 @@ nav a{
     opacity: 0.9;
 }
 
-nav a:hover{
-    opacity: 1;
-    border-top: 2px solid #0065FC;
-    
+.lienstyle:hover {
+    border-top: medium solid #0065FC;
 }
+
+.link-solo {
+    padding: 56px 0px 30px 0px;
+}
+
 
 #link1{
     color: black;
@@ -106,8 +108,6 @@ h1{
 
 .formulaire_container{
     display: flex;
-    height: 50px;
-    min-width: 408px;
     margin: 20px 0 30px 0;
 }
 
@@ -126,7 +126,7 @@ h1{
 }
 
 .form_1 input{
-    width: 230px;
+    width: 217px;
     height: 50px;
     border: 1px solid #0065FC;
     font-family: 'Raleway';
@@ -155,7 +155,7 @@ h1{
 
     /* FORMULAIRE 600px */
 
-.form_1 input[type=submit_small]{
+.button{
     display: none;
 }
 
@@ -899,65 +899,66 @@ footer{
 
         /* HEADER */
 
-    .big_screen{
-        display: none;
+    header {
+        margin: 0% 0% 30px 0%;
+        padding: 0%;
     }
 
-    .small_screen{
-        display: flex;
-        margin: 30px 0px 30px 0px;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    .logo_inscription{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+    .logo-container{
+        width: 50%;
+        margin: 20px 0px 25px 0px;
         padding: 0px 20px 0px 20px;
     }
 
     img.logo_R{
         margin: 0%;
-        width: 35%;
+        width: 60%;
     }
 
-    .small_screen .nav a{
-        padding-top: 40px;
-        padding-bottom: 25px;
-    }
-
-    .nav{
+    nav{
         display: flex;
-        flex-direction: row;
-        width: 375px;
-        margin-bottom: 20px;
-        padding: 0%;
-        text-align: center;        
+        justify-content: center;
+        text-align: center;
+        width: 100%;
     }
 
-    .nav a:active{
-        border-top: none;
+    .link-solo {
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        padding: 0%;
     }
 
     #link1{
         font-size: 16px;
         border-bottom: medium solid #F2F2F2;
         width: 50%;
+        margin: 0%;
+        padding: 0px 0px 15px 0px;
+        border-top: none;
     }
 
     #link2{
         font-size: 16px;
         border-bottom: medium solid #F2F2F2;
         width: 50%;
+        margin: 0%;
+        padding: 0px 0px 15px 0px;
+        border-top: none;
+    }
+
+    #link3{
+        font-size: 16px;
+        width: 50%;
+        margin: 0%;
+        padding: 0px 0px 15px 0px;
+        border-top: none;
     }
 
     #link1:active{
         color: #0065FC;
         cursor: pointer;
+        border-top: none;
         border-bottom: medium solid #0065FC;
     }
     
@@ -967,19 +968,33 @@ footer{
         border-bottom: medium solid #0065FC;
     }
 
+    .intro_container{
+        margin: 0% 20px 0px 20px;
+        padding: 0%;
+    }
+
+    .intro_container h1{
+        width: 100%;
+    }
+
+    .intro_container p{
+        margin-bottom: 40px;
+    }
+
         /* FORMULAIRE */
 
     .form_1 input[type=submit]{
         display: none;
     }
 
-    .form_1 input[type=submit_small]{
+    .button{
         display: inline;
         background-color: #0065FC;
         color: white;
         width: 50px;
         height: 50px;
         border-radius: 25% 25% 25% 25% / 25% 25% 25% 25%;
+        border: #0065FC;
     }
 
     .icon_search{
@@ -991,54 +1006,19 @@ footer{
         right: 34px;
     }    
 
-    .intro_container{
-        margin: 0%;
-        padding: 0%;
-        margin-left: 20px;
+    .formulaire_container {
+        justify-content: center;
     }
 
-    .intro_container h1{
-        width: 340px;
-    }
-
-    .intro_container p{
-        margin-bottom: 40px;
-    }
-
-    .formulaire_container{
+    .form_1 {
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .form_1 input[type=submit]{
-        display: none;
-    }
-
-    .form_1 input[type=submit_small]{
-        display: inline;
-        background-color: #0065FC;
-        color: white;
-        width: 50px;
-        height: 50px;
-        border-radius: 25% 25% 25% 25% / 25% 25% 25% 25%;
-        
-    }
-
-    .icon_search{
-        display: block;
-        font-size: 20px;
-        color: white;
-        position: relative;
-        top: 14px;
-        right: 34px;
+        align-items: center;
     }
 
     .form_1 input[type=search]{
         font-weight: bold;
         border: 1px solid #F2F2F2;
-        width: 230px;
-        height: 50px;
+        width: 200px;
     }
 
     .icon_location{
@@ -1139,6 +1119,15 @@ footer{
         padding: 10px;
     }
 
+    .titre_vignette_pop {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .text_vignette_pop {
+        font-size: 16px;
+    }
+
         /* Activities */
 
     .activities_container{
@@ -1146,18 +1135,18 @@ footer{
     }
 
     .bloc_duo1{
-        width: 333px;
+        width: 100%;
         margin: 0% 0% 40px 0%;
     }
     
     .big_bloc{
-        width: 333px;
+        width: 100%;
         height: 190px;
         margin: 0% 0% 40px 0%;
     }
         
     .bloc_duo2{
-        width: 333px;
+        width: 100%;
         margin: 0% 0% 40px 0%;
     }
     
